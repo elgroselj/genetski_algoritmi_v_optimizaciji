@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+	
+<meta charset="utf-8">
+<title>Genetski algoritem</title>
+<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<body>
+<h1>Uporaba genetskih algoritmov pri optimizaciji v prevajalniku</h1>
+
+<button class="btn index" onclick="window.location.href='index.html'">Domov</button>
+<button class="btn 6" onclick="window.location.href='sestnivo.html'">Šestnivojska zgradba</button>
+<button class="btn prev" onclick="window.location.href='prev.html'">Prevajalnik in interpreter</button>
+<button class="btn optim" onclick="window.location.href='optimizacija.html'">Optimizacija</button>
+<button class="btn gen" onclick="window.location.href='gen.html'">Genetski algoritem</button>
+
+<h2>Genetski algoritem</h2>
+
+<p>V nekaterih primerih brez preizkusa težko z zagotovostjo trdimo, da bo tak zapis najoptimalnejši, ker pa nam bi poskušanje vzelo veliko časa, take stvari raje prepustimo računalnikom. Ker pa bi tudi računalnik za preveritev vseh možnih kombinacij potrebovali enormno veliko časa, se pri optimizaciji poslužujemo tudi t.i. genetskih algoritmov.
+Genetski algoritem je podvrsta evolucijskega algoritma, pri katerem rešitev najdemo s pomočjo crossoverja, mutacij in selekcije. Najprej si določimo "populacijo" z določenim številom osebkov. V našem primeru so ti osebki seznami odločitev, na primer, katere probleme bomo reševali, katere zanke bomo izpustili ipd. in katerih ne (1-ja, 2-ne,...). To, na katerem mestu bo naš odgovor pritrdilen in na katerem nikalen, je naključno in od osebka/seznama do osebka/seznama različno. Nato vsak osebek testiramo, na primer v času, ki ga porabi naš program v primeru, da ga optimiziramo po navodilih enega od osebkov. Če smo z rezultatom enega od osebkov zadovoljni (kar je po samo eni testirani populaciji malo verjetno), če smo že preverili določeno število populacij ali če rezultat stagnira oz. se od populacije do populacije ne povečuje, v tem primeru terminiramo/zaključimo iskanje. V nasprotnem primeru po principu naravnega izbora obdržimo le boljši del populacije. Njegovim pripadnikom vzamemo naključne dele seznama (DNK) in jih naključno sestavimo v nove sezname novih osebkov, ki številčno dopolnijo populacijo. Da ohranimo gensko diverziteto, dodamo naključno mutacijo oz. spremenimo naključen podatek. Nato ponovno testiramo našo populacijo in ponavljamo celoten postopek dokler ne zadostimo prej določenim kriterijem in s tem končamo. Končen rezultat ne bo nujno najoptimalnejši od vseh možnih, bo pa zadovoljiv in pridobljen v doglednem času. Takim algoritmom pravimo aproksimacijski algoritmi. (Perovšek idr., 2016) (Evolutionary Algorithms, 2016)</p>
+
+<p style="text-align:center"><i>Določitev populacije</br>
+
+(Testiranje</br>
+
+Terminiranje?</br>
+
+Selekcija</br>
+
+Reprodukcija</br>
+
+Mutacija)</i></p>
+</body>
+</html>
